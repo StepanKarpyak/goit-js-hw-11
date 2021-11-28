@@ -11,7 +11,7 @@ class PixabayApi {
 
   async fetchPictures() {
     const response = await axios.get(
-      `?key=${KEY}&q=${this.searchQuery}&${REQUEST_PARAMS}&page=${this.page}&per_page=40`,
+      `?key=${KEY}&q=${this.searchQuery}&${REQUEST_PARAMS}&page=${this.page}&per_page=30`,
     );
     const pictures = await response.data;
     return pictures;
